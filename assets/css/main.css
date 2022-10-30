@@ -36,6 +36,10 @@ body{
 
      box-shadow: 0 0px 5px var(--primary);
 }
+.footer-icon{
+	width: 30px;
+	height: 30px;
+}
 
 .navbar{
     display: flex;
