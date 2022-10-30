@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     font-family: Fira Code, monospace;
-    background-color: var(--black);
+    background: linear-gradient(44deg, #000000, #370c37)
    
     min-height: 100vh;
     display: flex;
@@ -20,11 +20,11 @@ body{
     
     --primary: #FFBBFF;
     --transparent-primary: #FFBBFFAA;
+	
 }
 
 .header
 {
-    background-color: var(--black);
     border-bottom: solid var(--primary) 2px;
 
     display: flex;
@@ -36,7 +36,6 @@ body{
 .footer{
     padding: 10px;
     border-top: solid var(--primary) 2px;
-    background-color:  var(--black);
     margin-top: auto;
 
     box-shadow: 0 -3px var(--shadow-blur) var(--shadow-color);
