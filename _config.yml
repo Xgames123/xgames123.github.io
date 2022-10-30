@@ -15,7 +15,4 @@ discord_username: lissy<3#6869
 vrc_id: usr_a3683a1d-d328-46b0-94b2-61fa42b69c2e
 vrc_username: lissydev
 
-content:
-  ordered_header_pages: 
-    - index.md
-    - blog.markdown
+
