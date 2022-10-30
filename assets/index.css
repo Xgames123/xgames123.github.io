@@ -1,0 +1,289 @@
+body{
+    margin: 0px;
+    font-family: Fira Code, monospace;
+    background-color: var(--black);
+   
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    color: var(--secondary);
+
+    --black: #1a1a1a;
+    --gray: #555555;
+    --dark-gray: #333333;
+    --secondary: #FFFFFF;
+
+    --shadow-color: #00000099;
+    --shadow-blur: 10px;
+    --text-shadow-blur: 10px;
+}
+
+.header
+{
+    background-color: var(--black);
+    border-bottom: solid var(--primary) 2px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 3px var(--shadow-blur) var(--shadow-color);
+}
+
+.footer{
+    padding: 10px;
+    border-top: solid var(--primary) 2px;
+    background-color:  var(--black);
+    margin-top: auto;
+
+    box-shadow: 0 -3px var(--shadow-blur) var(--shadow-color);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navbar > a{
+    margin: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#themeSwitchButton
+{
+    margin: 20px;
+}
+
+li::marker{
+    font-weight: bold;
+    content: "* ";
+    color: var(--primary);
+}
+
+
+
+h1::before{ 
+    font-weight: bold;
+    color: var(--primary);
+    content: "# ";
+}
+
+section{
+    background-color: var(--dark-gray);
+
+    padding: 20px;
+    border: 0px solid var(--primary);
+    border-radius: 5px;
+    overflow:hidden;
+
+    box-shadow: 0 0 var(--shadow-blur) var(--shadow-color);
+}
+section > .title{
+    background-color: var(--gray);
+    padding: 3px;
+    padding-left: 10px;
+
+    margin: -20px;
+    margin-bottom: 0px;
+
+}
+
+
+a{
+    color: var(--primary);
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+.main{
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+@media only screen and (min-width: 800px) {
+    .main{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .main{
+        width: 70%;
+    }
+}
+
+
+
+
+.round-link{
+    
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+    border-radius: 100px;
+    background-color: var(--transparent-primary);
+    color: var(--secondary);
+
+    box-shadow: 0 0 var(--shadow-blur) var(--shadow-color);
+    border: solid 2px var(--primary);
+}
+
+.navbar-item:hover{
+    border: solid 2px var(--secondary);
+
+}
+
+.xgameslogo{
+    display: block;
+    object-fit: cover;
+    width: 90%;
+    max-width: 400px;
+
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    filter: drop-shadow(0 0 var(--shadow-blur) var(--shadow-color));
+}
+
+.link-grid-right{
+    justify-content: end !important;
+}
+.link-grid-left{
+    justify-content: start !important;
+}
+
+.link-grid-align-left{
+    margin-right: auto !important;
+}
+.link-grid-align-right{
+    margin-left: auto !important;
+}
+
+.link-grid{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap
+}
+.link-grid > *{
+    margin: 5px;
+    align-items: center;
+}
+
+.project-grid{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.project:hover{
+    text-decoration: none;
+
+}
+
+.project{
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+    flex-direction: column;
+    align-items: center;
+}
+.project > img{
+    background-color: var(--gray);
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.project > .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px;
+
+    border-radius: 100px;
+    background-color: var(--transparent-primary);
+    color: var(--secondary);
+
+  
+    border: solid 2px var(--primary);
+}
+
+.project > .info > img{
+    width: 30px;
+    height: 30px;
+}
+
+.project > .info > .name{
+    margin: 0px;
+
+}
+
+.status-tag-canceled{
+   
+    background-color: #DD000090;
+    border: solid 2px #DD0000;
+}
+.status-tag-canceled::after{
+    content: "canceled";
+}
+.status-tag-archived{
+   
+    background-color: #DDDDDD90;
+    border: solid 2px #DDDDDD;
+}
+.status-tag-archived::after{
+    content: "archived";
+}
+
+.status-tag-indev{
+    background-color: #00DD0090;
+    border: solid 2px #00DD00;
+}
+.status-tag-indev::after{
+    content: "in development";
+}
+
+.tag-github{
+    content: url("./Icons/GitHub-Mark-64px.png");
+}
+.tag-itch{
+    content: url("./Icons/itchio-logo-textless-black.png");
+}
+
+
+
+.status-tag{
+    margin: 0px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+    border-radius: 100px;
+   
+    color: var(--secondary);
+
+    
+}
+
