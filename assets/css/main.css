@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     font-family: Fira Code, monospace;
-    background: linear-gradient(44deg, #000000, #370c37)
+    background: linear-gradient(44deg, #000000, #370c37);
    
     min-height: 100vh;
     display: flex;
@@ -14,13 +14,10 @@ body{
     --dark-gray: #333333;
     --secondary: #FFFFFF;
 
-    --shadow-color: #00000099;
-    --shadow-blur: 10px;
-    --text-shadow-blur: 10px;
     
     --primary: #FFBBFF;
     --transparent-primary: #FFBBFFAA;
-	
+
 }
 
 .header
@@ -30,16 +27,21 @@ body{
     display: flex;
     flex-direction: column;
 
-    box-shadow: 0 3px var(--shadow-blur) var(--shadow-color);
+    background-color: var(--header-footer-color);
+
+    box-shadow: 0px 0px 5px var(--primary);
 }
 
 .footer{
+    
     padding: 10px;
     border-top: solid var(--primary) 2px;
     margin-top: auto;
+    background-color: var(--header-footer-color);
 
-    box-shadow: 0 -3px var(--shadow-blur) var(--shadow-color);
+    box-shadow: 0px 0px 5px var(--primary);
 }
+
 
 .navbar{
     display: flex;
@@ -53,10 +55,6 @@ body{
     margin-right: 5px;
 }
 
-#themeSwitchButton
-{
-    margin: 20px;
-}
 
 li::marker{
     font-weight: bold;
@@ -72,25 +70,6 @@ h1::before{
     content: "# ";
 }
 
-section{
-    background-color: var(--dark-gray);
-
-    padding: 20px;
-    border: 0px solid var(--primary);
-    border-radius: 5px;
-    overflow:hidden;
-
-    box-shadow: 0 0 var(--shadow-blur) var(--shadow-color);
-}
-section > .title{
-    background-color: var(--gray);
-    padding: 3px;
-    padding-left: 10px;
-
-    margin: -20px;
-    margin-bottom: 0px;
-
-}
 
 
 a{
@@ -136,7 +115,7 @@ a:hover{
     background-color: var(--transparent-primary);
     color: var(--secondary);
 
-    box-shadow: 0 0 var(--shadow-blur) var(--shadow-color);
+    box-shadow: 0px 0px 5px var(--primary);
     border: solid 2px var(--primary);
 }
 
