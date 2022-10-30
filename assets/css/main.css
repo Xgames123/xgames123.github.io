@@ -17,9 +17,9 @@ body{
     --shadow-color: #00000099;
     --shadow-blur: 10px;
     --text-shadow-blur: 10px;
-	
-	--primary: #FFBBFF;
-	--transparent-primary: #FFBBFFAA;
+    
+    --primary: #FFBBFF;
+    --transparent-primary: #FFBBFFAA;
 }
 
 .header
