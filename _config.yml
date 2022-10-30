@@ -1,4 +1,16 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "lissy's site" # the name of your site, e.g. ACME Corp.
+title: "lissy's site"
 
+
+#usernames
+
+github_username: xgames123
+itch_username: lissydev
+twitter_username: thereallissydev
+
+discord_id: 621724325845663744
+discord_username: lissy<3#6869
+
+vrc_id: usr_a3683a1d-d328-46b0-94b2-61fa42b69c2e
+vrc_username: lissydev
