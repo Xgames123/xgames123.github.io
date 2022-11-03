@@ -6,7 +6,7 @@
    fill="none"
    version="1.1"
    id="svg11"
-   sodipodi:docname="discord_dark.svg"
+   sodipodi:docname="discord_light.svg"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -57,6 +57,6 @@
        fill="#23272a"
        id="path2"
        clip-path="none"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1" />
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1" />
   </g>
 </svg>

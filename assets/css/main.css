@@ -75,6 +75,7 @@ h1::before{
     font-weight: bold;
     color: var(--primary);
     content: "# ";
+	text-shadow: 0 0px 3px var(--primary); 
 }
 
 
@@ -279,3 +280,22 @@ a:hover{
     
 }
 
+
+@keyframes blinking-cursor-animation{
+  20% { color:var(--primary);}
+  30% { color: transparent;}
+  70% { color: transparent;}
+  80% { color:var(--primary);}
+}
+
+.shell-indicator:before{
+	content:"> ";
+}
+
+
+.blinking-cursor:after{
+	content:"_";
+    color: var(--primary);
+    animation: blinking-cursor-animation 1s infinite;
+	
+}

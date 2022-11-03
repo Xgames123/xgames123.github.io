@@ -1,4 +1,7 @@
 <head>
+	{%- if page.stylesheet -%}
+	<link rel="stylesheet" href="/assets/css/{{page.stylesheet}}">
+	{%- endif -%}
 	<link rel="stylesheet" href="/assets/css/main.css">
 	<title>{{site.title}} | {{page.title}}</title>
 </head>
