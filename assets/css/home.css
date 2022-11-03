@@ -1,10 +1,39 @@
-.typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+
+
+@keyframes typing {
+  from, to { content: ">_" }
+  1% { content: "> " }
+  2% {content: ">H_" }
+  3% {content: ">Hi " }
+  4% {content: ">Hi _" }
+  5% {content: ">Hi I " }
+  6% {content: ">Hi I'_" }
+  7% {content: ">Hi I'm " }
+  8% {content: ">Hi I'm _" }
+  9% {content: ">Hi I'm l " }
+  10% {content: ">Hi I'm li_" }
+  11% {content: ">Hi I'm lis " }
+  12% {content: ">Hi I'm liss_" }
+  13% {content: ">Hi I'm lissy " }
+  14% {content: ">Hi I'm lissyd_" }
+  15% {content: ">Hi I'm lissyde " }
+  16% {content: ">Hi I'm lissydev_" }
+  17% {content: ">Hi I'm lissydev " }
+  18% {content: ">Hi I'm lissydev _" }
+  19% {content: ">Hi I'm lissydev <" }
+  20% {content: ">Hi I'm lissydev <3_" }
+	
+  21% {content: ">Hi I'm lissydev <3" }
+  22% {content: ">Hi I'm lissydev <3_" }
+}
+@keyframes typing-end{
+  from, to { content: "Hi I'm lissydev <3" }
+  50% { content: "Hi I'm lissydev <3_" }
+}
+
+.shell-indicator:before{
+	font-weight: bold;
+	color: var(--primary);
+	content: "> ";
+	animation: typing 20s step-end infinite;
 }

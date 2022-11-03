@@ -64,6 +64,12 @@ li::marker{
 }
 
 
+.shell-indicator:before{
+	font-weight: bold;
+    color: var(--primary);
+    content: "> ";
+}
+
 
 h1::before{ 
     font-weight: bold;
