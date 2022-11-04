@@ -1,104 +1,115 @@
-.project-grid{
+.projects-grid{
     display: flex;
     justify-content: center;
     flex-direction:row;
     flex-wrap: wrap;
+	
 }
 
-.project:hover{
-    text-decoration: none;
+.project > .top > .platform{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	height: 40px;
+}
 
+.tags{
+	display: flex;
+
+	padding: 6px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+
+}
+
+.tag{
+	margin: 1px;
+	padding: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	
+	border-radius: 30px;
+	color:white;
+	text-shadow: none;
+	font-size: 13px;
+	font-weight: bold;
+	
+}
+.status-tag-canceled{
+	background-color: #ff5555;
+	border: solid 2px #FF0000;
+}
+.status-tag-paused{
+	background-color: #404040;
+	border: solid 2px #202020;
+}
+.status-tag-indev{
+	background-color: #ffb070;
+	border: solid 2px #FF9800;
+}
+.has-demo{
+	background-color: #30a030;
+	border: solid 2px #00cc00;
+}
+.has-no-demo{
+	background-color: #ff5555;
+	border: solid 2px #FF0000;
+}
+
+.project-title{
+	margin: 0px;
+	padding: 3px;
+	margin-top: 10px;
+	color: white;
+	text-shadow: none;
+	text-align: center;
+	
+	background-color: var(--transparent-primary);
+	border: solid 2px var(--primary);
+	border-radius: 20px;
+	box-shadow: 0 0px 3px var(--primary);
+	
+}
+
+.project > .top > .icon{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
+.project > .top{
+	position: relative;
+	
+	background-color: var(--transparent-primary);
+	border: solid 2px  var(--primary);
+	border-radius: 20px;
+	
+	box-shadow: 0 0px 3px var(--primary);
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	min-height: 90vw;
+	min-width: 90vw;
+}
+
+@media only screen and (min-width: 860px) {
+    .project > .top{
+        min-height: 300px;
+		min-width: 300px;
+    }
 }
 
 .project{
-    margin: 20px;
-    display: flex;
-    gap: 10px;
-    overflow: auto;
-    flex-direction: column;
-    align-items: center;
+	padding: 5px;
+	margin: 10px;
+	text-decoration: none;
+	
 }
-.project > img{
-    background-color: var(--gray);
-    display: block;
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-}
+.project:hover{
+	text-decoration: none;
 
-.project > .info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-
-    padding: 2px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0px;
-
-    border-radius: 100px;
-    background-color: var(--transparent-primary);
-    color: var(--secondary);
-
-  
-    border: solid 2px var(--primary);
-}
-
-.project > .info > img{
-    width: 30px;
-    height: 30px;
-}
-
-.project > .info > .name{
-    margin: 0px;
-
-}
-
-.status-tag-canceled{
-   
-    background-color: #DD000090;
-    border: solid 2px #DD0000;
-}
-.status-tag-canceled::after{
-    content: "canceled";
-}
-.status-tag-archived{
-   
-    background-color: #DDDDDD90;
-    border: solid 2px #DDDDDD;
-}
-.status-tag-archived::after{
-    content: "archived";
-}
-
-.status-tag-indev{
-    background-color: #00DD0090;
-    border: solid 2px #00DD00;
-}
-.status-tag-indev::after{
-    content: "in development";
-}
-
-.tag-github{
-    content: url("./Icons/GitHub-Mark-64px.png");
-}
-.tag-itch{
-    content: url("./Icons/itchio-logo-textless-black.png");
-}
-
-
-
-.status-tag{
-    margin: 0px;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-
-
-    border-radius: 100px;
-   
-    color: var(--secondary);
-
-    
+	
 }

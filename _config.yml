@@ -3,6 +3,66 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "lissy's website"
 
 
+projects:
+    -
+        title: Primitier modding framework
+        platform: github
+        link: https://github.com/Xgames123/PrimitierModdingFramework
+        image: https://raw.githubusercontent.com/Xgames123/PrimitierModdingFramework/main/Documentation/PMFIconV2.png
+        status: paused
+        hasdemo: true
+        
+    - 
+        title: Primitier mod manager
+        platform: github
+        link: https://github.com/Xgames123/PrimitierModManager
+        image: https://raw.githubusercontent.com/Xgames123/PrimitierModdingFramework/main/Documentation/PMFIconV2.png
+        status: paused
+        hasdemo: true
+    
+    - 
+        title: Primitier multiplayer mod
+        platform: github
+        link: https://github.com/Xgames123/PrimitierModManager
+        image: https://raw.githubusercontent.com/Xgames123/PrimitierModdingFramework/main/Documentation/PMFIconV2.png
+        status: paused
+        hasdemo: false
+        
+    -
+        title: Tiny village
+        platform: itch
+        link: https://lissydev.itch.io/tiny-village
+        image: https://img.itch.zone/aW1hZ2UvMTE0OTUzNy82ODE2Mzk5LnBuZw==/original/6HZr%2BY.png
+        status: canceled
+        hasdemo: true
+        
+    -
+        title: ChromeDinoTractor
+        platform: github
+        link: https://github.com/Xgames123/ChromeDinoTractor
+        image: https://raw.githubusercontent.com/Xgames123/ChromeDinoTractor/main/Assets/Icon.gif
+        status: canceled
+        hasdemo: true
+        
+    -
+        title: Tanks.io
+        platform: itch
+        link: https://lissydev.itch.io/tanksio
+        image: https://img.itch.zone/aW1hZ2UvNTM1NzIzLzI5MjMyMzYucG5n/794x1000/XFn03Z.png
+        status: canceled
+        hasdemo: true
+        
+    
+
+tiny_projects:
+    -
+        title: Primitier modding framework
+        platform: github
+        link: https://github.com/Xgames123/PrimitierModdingFramework
+        image: https://raw.githubusercontent.com/Xgames123/PrimitierModdingFramework/main/Documentation/PMFIconV2.png
+        status: paused
+
+
 #usernames
 
 github_username: xgames123

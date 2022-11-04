@@ -3,4 +3,42 @@ stylesheet: projects.css
 layout: default
 title: Projects
 ---
-<p>What did I say GO AWAY</p>
+
+<div class="projects-grid">
+{% for proj in site.projects %}
+	<a class="project" href="{{ proj.link }}">
+		<div class="top" style="background-image: url({{proj.image}})">
+			<div class="tags">
+				{% if proj.status == "indev" %}
+				<span class="tag status-tag-indev">In development</span>
+				{% endif %}
+				{% if proj.status == "paused" %}
+				<span class="tag status-tag-paused">Paused</span>
+				{% endif %}
+				{% if proj.status == "canceled" %}
+				<span class="tag status-tag-canceled">Canceled</span>
+				{% endif %}
+			</div>
+			<div class="tags">
+				{% if proj.hasdemo %}
+				<span class="tag has-demo">Demo available</span>
+				{% else %}
+				<span class="tag has-no-demo">No demo available</span>
+				{% endif %}
+			</div>
+			
+				
+			{% if proj.platform == "github" %}
+				<img class="platform" src="/assets/img/github_invertocat_light.svg">
+				{% endif %}
+				{% if proj.platform == "itch" %}
+				<img class="platform" src="/assets/img/itchio_textless_light.svg">
+				{% endif %}
+				
+			
+		</div>
+		<h4 class="project-title">{{ proj.title }}</h4>
+		
+	</a>
+{% endfor %}
+</div>
