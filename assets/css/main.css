@@ -71,17 +71,21 @@ li::marker{
 }
 
 
-h1::before{ 
+h1::before, h2::before{ 
     font-weight: bold;
     color: var(--primary);
     content: "# ";
 	text-shadow: 0 0px 3px var(--primary); 
 }
 
+p{
+	padding-left: 30px;
+}
 
 
 a{
     color: var(--primary);
+	text-shadow: 0 0px 2px var(--primary);
 }
 a:link{
     text-decoration: none;
@@ -89,6 +93,7 @@ a:link{
 a:hover{
     cursor:pointer;
     text-decoration: underline;
+	text-shadow: 0 0px 7px var(--primary)
 }
 
 .main{
@@ -111,7 +116,7 @@ a:hover{
 
 
 .round-link:hover{
-    box-shadow: 0 0px 6px var(--primary);
+    box-shadow: 0 0px 8px var(--primary);
 }
 
 .round-link{
@@ -150,19 +155,6 @@ a:hover{
     filter: drop-shadow(0 0 var(--shadow-blur) var(--shadow-color));
 }
 
-.link-grid-right{
-    justify-content: end !important;
-}
-.link-grid-left{
-    justify-content: start !important;
-}
-
-.link-grid-align-left{
-    margin-right: auto !important;
-}
-.link-grid-align-right{
-    margin-left: auto !important;
-}
 
 .link-grid{
     display: flex;
@@ -170,115 +162,12 @@ a:hover{
     flex-direction:row;
     flex-wrap: wrap
 }
-.link-grid > *{
+.link-grid > * {
     margin: 5px;
     align-items: center;
 }
 
-.project-grid{
-    display: flex;
-    justify-content: center;
-    flex-direction:row;
-    flex-wrap: wrap;
-}
 
-.project:hover{
-    text-decoration: none;
-
-}
-
-.project{
-    margin: 20px;
-    display: flex;
-    gap: 10px;
-    overflow: auto;
-    flex-direction: column;
-    align-items: center;
-}
-.project > img{
-    background-color: var(--gray);
-    display: block;
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-.project > .info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-
-    padding: 2px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0px;
-
-    border-radius: 100px;
-    background-color: var(--transparent-primary);
-    color: var(--secondary);
-
-  
-    border: solid 2px var(--primary);
-}
-
-.project > .info > img{
-    width: 30px;
-    height: 30px;
-}
-
-.project > .info > .name{
-    margin: 0px;
-
-}
-
-.status-tag-canceled{
-   
-    background-color: #DD000090;
-    border: solid 2px #DD0000;
-}
-.status-tag-canceled::after{
-    content: "canceled";
-}
-.status-tag-archived{
-   
-    background-color: #DDDDDD90;
-    border: solid 2px #DDDDDD;
-}
-.status-tag-archived::after{
-    content: "archived";
-}
-
-.status-tag-indev{
-    background-color: #00DD0090;
-    border: solid 2px #00DD00;
-}
-.status-tag-indev::after{
-    content: "in development";
-}
-
-.tag-github{
-    content: url("./Icons/GitHub-Mark-64px.png");
-}
-.tag-itch{
-    content: url("./Icons/itchio-logo-textless-black.png");
-}
-
-
-
-.status-tag{
-    margin: 0px;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-
-
-    border-radius: 100px;
-   
-    color: var(--secondary);
-
-    
-}
 
 
 @keyframes blinking-cursor-animation{
