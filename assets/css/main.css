@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+html{
+	height: 100%;
+}
+
 body{
     margin: 0px;
     font-family: Roboto Mono;
     background: linear-gradient(44deg, #000000, #370c37);
    
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
 
