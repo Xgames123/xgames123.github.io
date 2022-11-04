@@ -9,31 +9,49 @@ title: Projects
 	<a class="project" href="{{ proj.link }}">
 		<div class="top" style="background-image: url({{proj.image}})">
 			<div class="tags">
-				{% if proj.status == "indev" %}
-				<span class="tag status-tag-indev">In development</span>
+				
+				{% if proj.pcvr %}
+				<span class="tag status-tag-gray">PCVR</span>
 				{% endif %}
-				{% if proj.status == "paused" %}
-				<span class="tag status-tag-paused">Paused</span>
+				{% if proj.platform_quest2 %}
+				<span class="tag status-tag-white">Quest 2</span>
 				{% endif %}
-				{% if proj.status == "canceled" %}
-				<span class="tag status-tag-canceled">Canceled</span>
+				
+				{% if proj.platform_windows %}
+				<span class="tag status-tag-blue">Windows</span>
 				{% endif %}
-			</div>
-			<div class="tags">
-				{% if proj.hasdemo %}
-				<span class="tag has-demo">Demo available</span>
-				{% else %}
-				<span class="tag has-no-demo">No demo available</span>
+				
+				{% if proj.platform_web %}
+				<span class="tag status-tag-gray">Web</span>
 				{% endif %}
+				
+				
 			</div>
 			
+			<div class="tags">
+				{% if proj.status == "indev" %}
+				<span class="tag status-tag-orange">In development</span>
+				{% endif %}
+				{% if proj.status == "paused" %}
+				<span class="tag status-tag-gray">Paused</span>
+				{% endif %}
+				{% if proj.status == "canceled" %}
+				<span class="tag status-tag-red">Canceled</span>
+				{% endif %}
 				
-			{% if proj.platform == "github" %}
-				<img class="platform" src="/assets/img/github_invertocat_light.svg">
+				{% if proj.hasdemo %}
+				<span class="tag status-tag-green">Demo available</span>
+				{% else %}
+				<span class="tag status-tag-red">No demo available</span>
 				{% endif %}
-				{% if proj.platform == "itch" %}
-				<img class="platform" src="/assets/img/itchio_textless_light.svg">
-				{% endif %}
+			</div>
+				
+			{% if proj.host == "github" %}
+			<img class="platform" src="/assets/img/github_invertocat_light.svg">
+			{% endif %}
+			{% if proj.host == "itch" %}
+			<img class="platform" src="/assets/img/itchio_textless_light.svg">
+			{% endif %}
 				
 			
 		</div>
@@ -42,3 +60,5 @@ title: Projects
 	</a>
 {% endfor %}
 </div>
+
+<!-- -5, 21, 68, -49, 16, -46, -18, 43, 37, -2, -22, -71 -->
