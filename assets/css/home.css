@@ -1,1 +1,29 @@
+.shell-indicator:before{
+	content:"> ";
+	margin: 0px;
+	padding: 0px;
+}
 
+
+.typing-animation{
+	width: 17ch;
+	animation: typing 1s steps(15), 1s blinking-cursor-animation 1s infinite;
+	white-space: nowrap;
+	overflow: hidden;
+	border-color: var(--primary);
+	border-right: 3px solid;
+	border-color:var(--primary);
+}
+@keyframes blinking-cursor-animation{
+  20% { border-color:var(--primary);}
+  30% { border-color: transparent;}
+  70% { border-color: transparent;}
+  80% { border-color:var(--primary);}
+}
+
+@keyframes typing {
+  0% {
+    width: 2ch;
+  }
+  
+}

@@ -1,8 +1,16 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{site.title}} | {{page.title}}</title>
+	
+	<!--stylesheets-->
+	<link rel="stylesheet" href="/assets/css/main.css">
 	{%- if page.stylesheet -%}
 	<link rel="stylesheet" href="/assets/css/{{page.stylesheet}}">
 	{%- endif -%}
-	<link rel="stylesheet" href="/assets/css/main.css">
-	<title>{{site.title}} | {{page.title}}</title>
+	
+	<!--scripts-->
+	<script src="/assets/js/main.js"></script>
+	{%- if page.script -%}
+	<script src="/assets/js/{{page.script}}"></script>
+	{%- endif -%}
 </head>

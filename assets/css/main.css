@@ -4,13 +4,16 @@ html{
 	height: 100%;
 }
 
+
+
 body{
     margin: 0px;
     font-family: Roboto Mono;
-    background: linear-gradient(44deg, #000000, #370c37);
-   
+    
+	background: linear-gradient(50deg, #000000, #370c37);
     min-height: 100%;
     display: flex;
+	position: relative;
     flex-direction: column;
 
     color: var(--secondary);
@@ -21,7 +24,8 @@ body{
     --secondary: #FFFFFF;
 
     --primary: #FFBBFF;
-    --transparent-primary: #FFBBFFAA;
+    --transparent-primary: #FFBBFF90;
+	
 	
 }
 
@@ -83,7 +87,13 @@ h1::before, h2::before{
 }
 
 p{
+	margin: 2px;
 	padding-left: 30px;
+	
+}
+b{
+	
+	text-shadow: 0 0px 2px var(--primary); 
 }
 
 
@@ -173,22 +183,3 @@ a:hover{
 
 
 
-
-@keyframes blinking-cursor-animation{
-  20% { color:var(--primary);}
-  30% { color: transparent;}
-  70% { color: transparent;}
-  80% { color:var(--primary);}
-}
-
-.shell-indicator:before{
-	content:"> ";
-}
-
-
-.blinking-cursor:after{
-	content:"_";
-    color: var(--primary);
-    animation: blinking-cursor-animation 1s infinite;
-	
-}
