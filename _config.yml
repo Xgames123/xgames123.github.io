@@ -1,4 +1,4 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://lissydev.home.kg" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "lissy's website"
 
@@ -48,6 +48,8 @@ projects:
         platform_quest2: true
         platform_windows: true
         
+
+tiny_projects:
     -
         title: ChromeDinoTractor
         host: github
@@ -57,7 +59,8 @@ projects:
         hasdemo: true
         
         platform_web: true
-        
+
+old_projects:
     -
         title: Tanks.io
         host: itch
@@ -67,16 +70,6 @@ projects:
         hasdemo: true
         
         platform_windows: true
-    
-
-tiny_projects:
-    -
-        title: Primitier modding framework
-        host: github
-        link: https://github.com/Xgames123/PrimitierModdingFramework
-        image: https://raw.githubusercontent.com/Xgames123/PrimitierModdingFramework/main/Documentation/PMFIconV2.png
-        status: paused
-
 
 #usernames
 

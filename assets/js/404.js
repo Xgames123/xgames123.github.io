@@ -20,8 +20,9 @@ setInterval(()=>{
 	}
 	egg.style ="width: "+eggSize+"px; filter: drop-shadow(0px 0px "+(eggSize-110)+"px #FFFFFFFF);"
 	if(eggSize > 700){
+		eggSize = 100;
+		egg.className = "";
 		window.open("https://en.wikipedia.org/wiki/Egg"); 
-		location.reload();
 	}
 	
 }, 10);

@@ -4,60 +4,28 @@ layout: default
 title: Projects
 ---
 
+<h1>Main projects</h1>
+<p>This are projects were I put alot of time into</p>
 <div class="projects-grid">
 {% for proj in site.projects %}
-	<a class="project" href="{{ proj.link }}">
-		<div class="top" style="background-image: url({{proj.image}})">
-			<div class="tags">
-				
-				{% if proj.pcvr %}
-				<span class="tag status-tag-gray">PCVR</span>
-				{% endif %}
-				{% if proj.platform_quest2 %}
-				<span class="tag status-tag-white">Quest 2</span>
-				{% endif %}
-				
-				{% if proj.platform_windows %}
-				<span class="tag status-tag-blue">Windows</span>
-				{% endif %}
-				
-				{% if proj.platform_web %}
-				<span class="tag status-tag-gray">Web</span>
-				{% endif %}
-				
-				
-			</div>
-			
-			<div class="tags">
-				{% if proj.status == "indev" %}
-				<span class="tag status-tag-orange">In development</span>
-				{% endif %}
-				{% if proj.status == "paused" %}
-				<span class="tag status-tag-gray">Paused</span>
-				{% endif %}
-				{% if proj.status == "canceled" %}
-				<span class="tag status-tag-red">Canceled</span>
-				{% endif %}
-				
-				{% if proj.hasdemo %}
-				<span class="tag status-tag-green">Demo available</span>
-				{% else %}
-				<span class="tag status-tag-red">No demo available</span>
-				{% endif %}
-			</div>
-				
-			{% if proj.host == "github" %}
-			<img class="platform" src="/assets/img/github_invertocat_light.svg">
-			{% endif %}
-			{% if proj.host == "itch" %}
-			<img class="platform" src="/assets/img/itchio_textless_light.svg">
-			{% endif %}
-				
-			
-		</div>
-		<h4 class="project-title">{{ proj.title }}</h4>
-		
-	</a>
+	{% include project.html project=proj %}
+{% endfor %}
+</div>
+
+<h1>Tiny projects</h1>
+<p>This are tiny projects that I finished in less than a week</p>
+<div class="projects-grid">
+{% for proj in site.tiny_projects %}
+	{% include project.html project=proj %}
+{% endfor %}
+</div>
+
+<h1>Old garbage</h1>
+<p>This is old garbage</p>
+<p>Don't look here</p>
+<div class="projects-grid">
+{% for proj in site.old_projects  %}
+	{% include project.html project=proj %}
 {% endfor %}
 </div>
 

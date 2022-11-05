@@ -23,18 +23,20 @@
 	padding-bottom: 0px;
 
 	width: calc(100% - 50px);
+	
 }
 
 .tag{
 	margin: 1px;
 	padding: 1px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 7px;
+	padding-right: 7px;
 	
 	border-radius: 30px;
 	color:white;
 	text-shadow: none;
-	font-size: 13px;
+	font-size: 12px;
+	text-transform: uppercase;
 	font-weight: bold;
 	
 }

@@ -67,26 +67,26 @@ body{
     margin-right: 5px;
 }
 
+li{
+	margin-bottom:5px;
+}
 
 li::marker{
     font-weight: bold;
     content: "* ";
     color: var(--primary);
+	text-shadow: 0 0px 3px var(--primary); 
 }
 
 
-.shell-indicator:before{
-	font-weight: bold;
-    color: var(--primary);
-    content: "> ";
-}
 
 
 h1::before, h2::before{ 
     font-weight: bold;
     color: var(--primary);
-    content: "# ";
+    content: "> ";
 	text-shadow: 0 0px 3px var(--primary); 
+
 }
 
 p{
@@ -96,7 +96,8 @@ p{
 }
 b{
 	
-	text-shadow: 0 0px 2px var(--primary); 
+	font-weight: bolder;
+	text-shadow: 0 0px 3px #FFFFFF; 
 }
 
 
