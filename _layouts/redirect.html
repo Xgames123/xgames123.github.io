@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+
+{% if page.name == "github.html" %}
+{% capture redirect_to %}{{ site.github_url }}{% endcapture %}
+{% endif %}
+
+{% if page.name == "itch.html" %}
+{% capture redirect_to %}{{ site.itch_url }}{% endcapture %}
+{% endif %}
+
+{% if page.name == "twitter.html" %}
+{% capture redirect_to %}{{ site.twitter_url }}{% endcapture %}
+{% endif %}
+
+{% if page.name == "discord.html" %}
+{% capture redirect_to %}{{ site.discord_url }}{% endcapture %}
+{% endif %}
+
+{% if page.name == "vrchat.html" %}
+{% capture redirect_to %}{{ site.vrc_url }}{% endcapture %}
+{% endif %}
+
+<html>
+<head>	
+	<link rel="canonical" href="{{ redirect_to }}"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="refresh" content="0;url={{ redirect_to }}" />
+</head>
+<body>
+    <p>Redirecting to {{ page.redirect_to }}</p>
+	<a href="{{ redirect_to }}">Click here if you are not redirected.<a>
+	<script>location='{{ redirect_to }}'</script>
+</body>
+</html>
