@@ -1,8 +1,14 @@
 url: "https://lissydev.home.kg" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "lissy's website"
-description: "My personal website"
+description: "Lissy's personal website"
 
+collections:
+    projects:
+        output: true
+    socials:
+        output: true
+    
 projects:
     -
         title: Primitier modding framework
@@ -70,21 +76,4 @@ old_projects:
         hasdemo: true
         
         platform_windows: true
-
-#usernames
-
-github_username: xgames123
-github_url: https://github.com/xgames123
-itch_username: lissydev
-itch_url: https://lissydev.itch.io/
-twitter_username: "@thereallissydev"
-twitter_url: https://twitter.com/thereallissydev
-
-discord_username: lissy<3#6869
-discord_url: https://discordapp.com/users/621724325845663744
-
-
-vrc_username: lissydev
-vrc_url: https://vrchat.com/home/user/usr_a3683a1d-d328-46b0-94b2-61fa42b69c2e
-
 

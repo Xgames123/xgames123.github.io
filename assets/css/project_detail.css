@@ -1,0 +1,28 @@
+
+.main{
+	display: grid;
+	
+}
+
+
+.image{
+	
+	border: solid 2px  var(--primary);
+	border-radius: 20px;
+	
+	box-shadow: 0 0px 3px var(--primary);
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 50vw;
+	min-width: 50vw;
+	aspect-ratio: 1;
+}
+
+@media only screen and (min-width: 860px) {
+    .image{
+        min-height: 300px;
+		min-width: 300px;
+    }
+}

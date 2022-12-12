@@ -2,13 +2,9 @@
   
 
   <div class="link-grid">
-
-	<a href="{{ site.github_url }}" class="round-link"><img class="footer-icon" src="/assets/img/github_invertocat_light.svg"><span>{{ site.github_username }}</span></a>
-	<a href="{{ site.itch_url }}" class="round-link"><img class="footer-icon" src="/assets/img/itchio_textless_light.svg"><span>{{ site.itch_username }}</span></a>
-	<a href="{{ site.twitter_url }}" class="round-link"><img class="footer-icon" src="/assets/img/twitter_light.svg"><span> {{ site.twitter_username }}</span></a>
-	<a href="{{ site.discord_url }}" class="round-link"><img class="footer-icon" src="/assets/img/discord_light.svg"><span>{{ site.discord_username }}</span></a>
-    <a href="{{ site.vrc_url }}" class="round-link"><img class="footer-icon" src="/assets/img/vrchat_light.svg"><span>{{ site.vrc_username }}</span></a>
-
+	{% for social in site.socials %}
+		<a href="{{ social.link }}" class="round-link"><img class="footer-icon" src="{{ social.icon }}" alt="{{ social.icon_alt }}"><span>{{ social.username }}</span></a>
+	{% endfor %}
   </div>
 
 </footer>

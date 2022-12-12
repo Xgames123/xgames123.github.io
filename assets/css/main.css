@@ -4,12 +4,15 @@ html{
 	height: 100%;
 }
 
-
+.darkmode{
+	background: black;
+}
 
 body{
     margin: 0px;
     font-family: Roboto Mono;
     
+	
 	background: linear-gradient(50deg, #000000, #000000, #000000, #370c37);
 	background-repeat: no-repeat;
 	background-size: 100% 10000px;
@@ -37,7 +40,7 @@ body{
     border-bottom: solid var(--primary) 2px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     box-shadow: 0 0px 5px var(--primary);
 }
@@ -50,6 +53,7 @@ body{
      box-shadow: 0 0px 5px var(--primary);
 }
 .footer-icon{
+	padding-right: 5px;
 	vertical-align: middle;
 	width: 20px;
 	height: 20px;
@@ -59,12 +63,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
+	flex-grow: 1;
 }
 .navbar > a{
     margin: 10px;
     margin-left: 5px;
     margin-right: 5px;
+}
+#darkmode-button{
+	margin: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+
 }
 
 li{
@@ -135,6 +145,8 @@ a:hover{
 
 .round-link:hover{
     box-shadow: 0 0px 8px var(--primary);
+	cursor: pointer;
+	text-decoration: underline;
 }
 
 .round-link{

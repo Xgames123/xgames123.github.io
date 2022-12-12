@@ -3,4 +3,38 @@
 		<a href="{{site.url}}/index.html" class="round-link">/</a>
 		<a href="{{site.url}}/projects.html" class="round-link">/projects</a>
 	</nav>
+	<script>
+		const DarkModeText = "Dark&nbsp; Mode";
+		const LightModeText = "Light Mode";
+		var DarkMode = JSON.parse(localStorage.getItem("darkmode"));
+		console.log(DarkMode);
+		window.addEventListener('DOMContentLoaded', () =>
+		{
+			UpdateDarkmodeSetting(document.getElementById("darkmode-button"));
+		});
+		
+		function UpdateDarkmodeSetting(button)
+		{
+			if(DarkMode) 
+			{
+				document.body.className = 'darkmode'; 
+				button.innerHTML = LightModeText;
+			} 
+			else 
+			{
+				document.body.className = ''; 
+				button.innerHTML = DarkModeText;
+			}
+			StoreDarkmodeState();
+		}
+		
+		function StoreDarkmodeState()
+		{
+			localStorage.setItem("darkmode", DarkMode);
+		}
+		
+	</script>
+	<a id="darkmode-button" class="round-link" onclick="
+			DarkMode = !DarkMode;
+			UpdateDarkmodeSetting(this);"></a>
 </header>
