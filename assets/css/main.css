@@ -111,9 +111,11 @@ b{
 }
 
 
-a{
+a, button{
     color: var(--primary);
 	text-shadow: 0 0px 2px var(--primary);
+	font-family: inherit;
+	font-size: inherit;
 }
 a:link{
     text-decoration: none;
