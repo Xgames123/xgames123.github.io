@@ -6,11 +6,18 @@
 	
 }
 
-.project > .top > .platform{
+.platform{
 	position: absolute;
 	right: 5px;
 	top: 5px;
 	height: 40px;
+	
+	padding: 3px;
+	background-color: #D090D0;
+	border: solid 2px var(--primary);
+	border-radius: 10px;
+	box-shadow: 0 0px 3px var(--primary);
+	
 }
 
 .tags{
@@ -39,56 +46,70 @@
 	text-transform: uppercase;
 	font-weight: bold;
 	
+	--tag-shadow-size: 5px;
 }
 .status-tag-red{
-	background-color: #ff5555;
-	border: solid 2px #FF0000;
+	background-color: #E52000;
+	border: solid 2px #900000;
+	box-shadow: 0 0px var(--tag-shadow-size) #900000;
 }
 .status-tag-gray{
 	background-color: #404040;
 	border: solid 2px #202020;
+	box-shadow: 0 0px var(--tag-shadow-size) #202020;
 }
 .status-tag-orange{
 	background-color: #ffb070;
 	border: solid 2px #FF9800;
+	box-shadow: 0 0px var(--tag-shadow-size) #FF9800;
 }
 .status-tag-green{
-	background-color: #30a030;
-	border: solid 2px #00cc00;
+	background-color: #008000;
+	border: solid 2px #006000;
+	box-shadow: 0 0px var(--tag-shadow-size) #006000;
 }
 
 .status-tag-blue{
-	background-color: #00b0ff;
-	border: solid 2px #0090ff;
+	background-color: rgb(0, 121, 191);
+	border: solid 2px #0050b0;
+	box-shadow: 0 0px var(--tag-shadow-size) #0050b0;
 }
 .status-tag-white{
-	background-color: #d0d0d0;
-	border: solid 2px #ffffff;
+	color: #707070;
+	background-color: #ffffff;
+	border: solid 2px #505050;
+	box-shadow: 0 0px var(--tag-shadow-size) #707070;
 }
 
 .project-title{
-	margin: 0px;
-	padding: 3px;
+	display: block;
+	font-weight: bold;
+	
+
 	margin-top: 10px;
 	color: white;
 	text-shadow: none;
 	text-align: center;
 	
-	background-color: var(--transparent-primary);
-	border: solid 2px var(--primary);
-	border-radius: 20px;
-	box-shadow: 0 0px 3px var(--primary);
+	
 	
 }
 
-.project > .top > .icon{
+.icon{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
 }
 
-.project > .top{
+.project-icon-link:hover{
+	text-decoration: none;
+}
+.project-icon:hover{
+	box-shadow: 0 0px 8px var(--primary);
+}
+
+.project-icon{
 	position: relative;
 	
 	background-color: var(--transparent-primary);
@@ -106,7 +127,7 @@
 }
 
 @media only screen and (min-width: 860px) {
-    .project > .top{
+	.project-icon{
         min-height: 300px;
 		min-width: 300px;
     }
@@ -115,11 +136,5 @@
 .project{
 	padding: 5px;
 	margin: 10px;
-	text-decoration: none;
-	
-}
-.project:hover{
-	text-decoration: none;
-
 	
 }

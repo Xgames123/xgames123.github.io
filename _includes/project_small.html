@@ -1,53 +1,55 @@
-<a class="project" href="{{ include.project.link }}">
-	<div class="top" style="background-image: url({{include.project.image}})">
-		<div class="tags">
-			<span class="tag status-tag-gray">Platforms:</span>
+<section class="project">
+	<a class="project-icon-link" tabindex="-1" href="{{ include.project.link }}">
+		<div class="project-icon" style="background-image: url({{include.project.image}})" >
+			<div class="tags">
+				<span class="tag status-tag-gray">Platforms:</span>
+				
+				{% if include.project.pcvr %}
+				<span class="tag status-tag-gray">PCVR</span>
+				{% endif %}
+				{% if include.project.platform_quest2 %}
+				<span class="tag status-tag-white">Quest 2</span>
+				{% endif %}
+				
+				{% if include.project.platform_windows %}
+				<span class="tag status-tag-blue">Windows</span>
+				{% endif %}
+				
+				{% if include.project.platform_web %}
+				<span class="tag status-tag-gray">Web</span>
+				{% endif %}
+				
+				
+			</div>
 			
-			{% if include.project.pcvr %}
-			<span class="tag status-tag-gray">PCVR</span>
+			<div class="tags">
+				{% if include.project.status == "indev" %}
+				<span class="tag status-tag-orange">In development</span>
+				{% endif %}
+				{% if include.project.status == "paused" %}
+				<span class="tag status-tag-gray">Paused</span>
+				{% endif %}
+				{% if include.project.status == "canceled" %}
+				<span class="tag status-tag-red">Canceled</span>
+				{% endif %}
+				
+				{% if include.project.hasdemo %}
+				<span class="tag status-tag-green">Demo available</span>
+				{% else %}
+				<span class="tag status-tag-red">No demo available</span>
+				{% endif %}
+			</div>
+				
+			{% if include.project.host == "github" %}
+			<img class="platform" src="/assets/img/github_invertocat_light.svg" alt="github logo">
 			{% endif %}
-			{% if include.project.platform_quest2 %}
-			<span class="tag status-tag-white">Quest 2</span>
+			{% if include.project.host == "itch" %}
+			<img class="platform" src="/assets/img/itchio_textless_light.svg" alt="itch logo">
 			{% endif %}
-			
-			{% if include.project.platform_windows %}
-			<span class="tag status-tag-blue">Windows</span>
-			{% endif %}
-			
-			{% if include.project.platform_web %}
-			<span class="tag status-tag-gray">Web</span>
-			{% endif %}
-			
-			
+				
 		</div>
-		
-		<div class="tags">
-			{% if include.project.status == "indev" %}
-			<span class="tag status-tag-orange">In development</span>
-			{% endif %}
-			{% if include.project.status == "paused" %}
-			<span class="tag status-tag-gray">Paused</span>
-			{% endif %}
-			{% if include.project.status == "canceled" %}
-			<span class="tag status-tag-red">Canceled</span>
-			{% endif %}
-			
-			{% if include.project.hasdemo %}
-			<span class="tag status-tag-green">Demo available</span>
-			{% else %}
-			<span class="tag status-tag-red">No demo available</span>
-			{% endif %}
-		</div>
-			
-		{% if include.project.host == "github" %}
-		<img class="platform" src="/assets/img/github_invertocat_light.svg">
-		{% endif %}
-		{% if include.project.host == "itch" %}
-		<img class="platform" src="/assets/img/itchio_textless_light.svg">
-		{% endif %}
-			
-		
-	</div>
-	<h4 class="project-title">{{ include.project.title }}</h4>
+	</a>
 	
-</a>
+	<a class="project-title round-link" href="{{ include.project.link }}">{{ include.project.title }}</a>
+	
+</section>

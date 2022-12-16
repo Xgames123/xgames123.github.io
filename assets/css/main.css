@@ -8,6 +8,12 @@ html{
 	background: black;
 }
 
+*::selection
+{
+	color: black;
+	background-color: var(--primary);
+}
+
 body{
     margin: 0px;
     font-family: Roboto Mono;
