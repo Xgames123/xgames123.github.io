@@ -8,15 +8,19 @@ title: Projects
 <p>This are projects were I put alot of time into</p>
 <div class="projects-grid">
 {% for proj in site.projects %}
-	{% include project_small.html project=proj %}
+	{% if proj.category == "main" %}
+		{% include project_small.html project=proj %}
+	{% endif %}
 {% endfor %}
 </div>
 
 <h1>Tiny projects</h1>
 <p>This are tiny projects that I finished in less than a week</p>
 <div class="projects-grid">
-{% for proj in site.tiny_projects %}
-	{% include project_small.html project=proj %}
+{% for proj in site.projects %}
+	{% if proj.category == "tiny" %}
+		{% include project_small.html project=proj %}
+	{% endif %}
 {% endfor %}
 </div>
 
@@ -24,8 +28,10 @@ title: Projects
 <p>This is old garbage</p>
 <p>Don't look here</p>
 <div class="projects-grid">
-{% for proj in site.old_projects  %}
-	{% include project_small.html project=proj %}
+{% for proj in site.projects  %}
+	{% if proj.category == "garbage" %}
+		{% include project_small.html project=proj %}
+	{% endif %}
 {% endfor %}
 </div>
 

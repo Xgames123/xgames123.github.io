@@ -9,51 +9,6 @@ collections:
     socials:
         output: true
     
-projects:
-    -
-        title: Primitier modding framework
-        host: github
-        link: https://github.com/Xgames123/PrimitierModdingFramework
-        image: https://raw.githubusercontent.com/Xgames123/PrimitierModdingFramework/main/Documentation/PMFIconV2.png
-        status: paused
-        hasdemo: true
-        
-        pcvr: true
-        platform_windows: true
-        
-    - 
-        title: Primitier mod manager
-        host: github
-        link: https://github.com/Xgames123/PrimitierModManager
-        image: https://raw.githubusercontent.com/Xgames123/PrimitierModdingFramework/main/Documentation/PMFIconV2.png
-        status: paused
-        hasdemo: true
-        
-        pcvr: true
-        platform_windows: true
-    
-    - 
-        title: Primitier multiplayer mod
-        host: github
-        link: https://github.com/Xgames123/PrimitierModManager
-        image: https://raw.githubusercontent.com/Xgames123/PrimitierModdingFramework/main/Documentation/PMFIconV2.png
-        status: paused
-        hasdemo: false
-        
-        pcvr: true
-        platform_windows: true
-        
-    -
-        title: Tiny village
-        host: itch
-        link: https://lissydev.itch.io/tiny-village
-        image: https://img.itch.zone/aW1hZ2UvMTE0OTUzNy82ODE2Mzk5LnBuZw==/original/6HZr%2BY.png
-        status: canceled
-        hasdemo: true
-        
-        platform_quest2: true
-        platform_windows: true
-        
 
 tiny_projects:
     -
@@ -66,14 +21,4 @@ tiny_projects:
         
         platform_web: true
 
-old_projects:
-    -
-        title: Tanks.io
-        host: itch
-        link: https://lissydev.itch.io/tanksio
-        image: https://img.itch.zone/aW1hZ2UvNTM1NzIzLzI5MjMyMzYucG5n/794x1000/XFn03Z.png
-        status: canceled
-        hasdemo: true
-        
-        platform_windows: true
 

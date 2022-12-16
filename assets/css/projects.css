@@ -75,10 +75,10 @@
 	box-shadow: 0 0px var(--tag-shadow-size) #0050b0;
 }
 .status-tag-white{
-	color: #707070;
+	color: #505050;
 	background-color: #ffffff;
 	border: solid 2px #505050;
-	box-shadow: 0 0px var(--tag-shadow-size) #707070;
+	box-shadow: 0 0px var(--tag-shadow-size) #505050;
 }
 
 .project-title{
@@ -112,7 +112,7 @@
 .project-icon{
 	position: relative;
 	
-	background-color: var(--transparent-primary);
+	background-color: black;
 	border: solid 2px  var(--primary);
 	border-radius: 20px;
 	

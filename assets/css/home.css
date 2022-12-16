@@ -1,29 +1,44 @@
-.shell-indicator:before{
-	content:"> ";
-	margin: 0px;
-	padding: 0px;
+.css-typing-animation {
+  animation: typing 1s steps(15), 1s;
 }
-
-
 .typing-animation{
-	width: 17ch;
-	animation: typing 1s steps(15), 1s blinking-cursor-animation 1s infinite;
-	white-space: nowrap;
-	overflow: hidden;
-	border-color: var(--primary);
-	border-right: 3px solid;
-	border-color:var(--primary);
+  width: 17ch;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  margin-bottom:0;
 }
-@keyframes blinking-cursor-animation{
-  20% { border-color:var(--primary);}
-  30% { border-color: transparent;}
-  70% { border-color: transparent;}
-  80% { border-color:var(--primary);}
+
+
+.cursor {
+  height: 4ch;
+  width: 3px;
+  background-color: var(--primary);
+  animation: blinking-cursor-animation 1s infinite;
+  background-color: var(--primary);
+  
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+@keyframes blinking-cursor-animation {
+  20% { opacity: 1; }
+  30% { opacity: 0; }
+  70% { opacity: 0; }
+  80% { opacity: 1; }
 }
 
 @keyframes typing {
   0% {
     width: 2ch;
   }
-  
+  100% {
+    width: 17ch;
+  }
+}
+
+/* Add a container element to hold the h1 and cursor elements */
+.typing-animation-container {
+  display: flex;
+  align-items: flex-end;
 }
