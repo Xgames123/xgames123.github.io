@@ -8,17 +8,5 @@ collections:
         output: true
     socials:
         output: true
-    
-
-tiny_projects:
-    -
-        title: ChromeDinoTractor
-        host: github
-        link: https://github.com/Xgames123/ChromeDinoTractor
-        image: https://raw.githubusercontent.com/Xgames123/ChromeDinoTractor/main/Assets/Icon.gif
-        status: canceled
-        hasdemo: true
-        
-        platform_web: true
 
 
