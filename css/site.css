@@ -9,13 +9,21 @@ html{
 	background-color: var(--color-primary);
 }
 
-body {
-    --color-primary: #FFBBFF;
-    --color-primary-dark: #805e80;
-    --color-secondary: #FFFFFF;
-    --color-background-light: #370c37;
-    --color-background-dark: #000000;
+
+.background {
+	background: linear-gradient(50deg, var(--color-background-light),  var(--color-background-dark), var(--color-background-dark), var(--color-background-dark), var(--color-background-light));
+	background-repeat: no-repeat;
+	background-size: 100% 10000px;
 }
+
+.background {
+	--color-primary: #00CCFF;
+	--color-primary-dark: #007c9d;
+	--color-secondary: #FFFFFF;
+	--color-background-light: #002030;
+	--color-background-dark: #000000;
+}
+
 body {
     --color-danger: #ff1000;
     --color-danger-dark: #a01000;

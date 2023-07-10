@@ -1,12 +1,8 @@
-url: "https://lissydev.home.kg" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://xgames123.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "lissy's website"
-description: "Lissy's personal website"
+title: "Redirect site"
+description: "The site to redirect to when something goes wrong at ldev.eu.org"
 
-collections:
-    projects:
-        output: true
-    socials:
-        output: true
+
 
 
