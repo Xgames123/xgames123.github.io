@@ -40,7 +40,7 @@ body {
     position: relative;
     flex-direction: column;
     color: var(--color-secondary);
-    overflow:hidden;
+    overflow-x:hidden;
 }
 
 .header
